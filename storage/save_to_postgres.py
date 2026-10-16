@@ -28,29 +28,25 @@ def get_engine():
     logger.info("Database engine created successfully")
     return engine
 
-
 def save_ohlcv(df: pd.DataFrame, table_name: str = "raw_ohlcv") -> None:
-    """
-    Save OHLCV DataFrame to PostgreSQL.
-    Appends new rows — does not overwrite existing data.
+        if df.empty:
+            logger.warning("Empty DataFrame — nothing to save")
+            return
 
-    Args:
-        df         : DataFrame returned by fetch_ohlcv()
-        table_name : target table name in PostgreSQL
-    """
-    if df.empty:
-        logger.warning("Empty DataFrame — nothing to save")
-        return
+        engine = get_engine()
 
-    engine = get_engine()
+        with engine.begin() as conn:
+            for _, row in df.iterrows():
+                conn.execute(
+                    text(f"""
+                        INSERT INTO {table_name}
+                        (symbol, open_time, open, high, low, close, volume, trades_count)
+                        VALUES (:symbol, :open_time, :open, :high, :low, :close, :volume, :trades_count)
+                        ON CONFLICT (symbol, open_time) DO NOTHING
+                    """),
+                    row.to_dict()
+                )
 
-    df.to_sql(
-        name=table_name,
-        con=engine,
-        if_exists="append",
-        index=False
-    )
-
-    logger.info(f"{len(df)} rows saved to table '{table_name}'")
+        logger.info(f"{len(df)} rows processed for table '{table_name}'")
 
 
