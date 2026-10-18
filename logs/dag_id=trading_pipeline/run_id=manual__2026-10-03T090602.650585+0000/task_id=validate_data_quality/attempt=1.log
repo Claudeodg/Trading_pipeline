@@ -1,0 +1,60 @@
+[2026-10-03T09:06:07.957+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-03T09:06:08.232+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T09:06:02.650585+00:00 [queued]>
+[2026-10-03T09:06:08.284+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T09:06:02.650585+00:00 [queued]>
+[2026-10-03T09:06:08.285+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-03T09:06:08.319+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): validate_data_quality> on 2026-10-03 09:06:02.650585+00:00
+[2026-10-03T09:06:08.331+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=198) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-03T09:06:08.328+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'validate_data_quality', 'manual__2026-10-03T09:06:02.650585+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpx_mprbpt']
+[2026-10-03T09:06:08.333+0000] {standard_task_runner.py:63} INFO - Started process 200 to run task
+[2026-10-03T09:06:08.333+0000] {standard_task_runner.py:91} INFO - Job 120: Subtask validate_data_quality
+[2026-10-03T09:06:08.580+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T09:06:02.650585+00:00 [running]> on host dbc3682b2df0
+[2026-10-03T09:06:08.857+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='validate_data_quality' AIRFLOW_CTX_EXECUTION_DATE='2026-10-03T09:06:02.650585+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-03T09:06:02.650585+00:00'
+[2026-10-03T09:06:08.858+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-03T09:06:08.867+0000] {validate_ohlcv.py:38} INFO - Starting data quality validation on raw_ohlcv
+[2026-10-03T09:06:08.868+0000] {validate_ohlcv.py:27} INFO - Database engine created successfully
+[2026-10-03T09:06:08.932+0000] {validate_ohlcv.py:42} INFO - Loaded 271 rows for validation
+[2026-10-03T09:06:08.932+0000] {validate_ohlcv.py:33} INFO - [PASS] Table is not empty
+[2026-10-03T09:06:08.933+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'symbol'
+[2026-10-03T09:06:08.934+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'open_time'
+[2026-10-03T09:06:08.935+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'open'
+[2026-10-03T09:06:08.936+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'high'
+[2026-10-03T09:06:08.936+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'low'
+[2026-10-03T09:06:08.937+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'close'
+[2026-10-03T09:06:08.937+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'volume'
+[2026-10-03T09:06:08.938+0000] {validate_ohlcv.py:33} INFO - [PASS] 'open' > 0
+[2026-10-03T09:06:08.939+0000] {validate_ohlcv.py:33} INFO - [PASS] 'high' > 0
+[2026-10-03T09:06:08.940+0000] {validate_ohlcv.py:33} INFO - [PASS] 'low' > 0
+[2026-10-03T09:06:08.940+0000] {validate_ohlcv.py:33} INFO - [PASS] 'close' > 0
+[2026-10-03T09:06:08.941+0000] {validate_ohlcv.py:33} INFO - [FAIL] 'volume' > 0
+[2026-10-03T09:06:08.941+0000] {validate_ohlcv.py:33} INFO - [PASS] high >= low
+[2026-10-03T09:06:08.942+0000] {validate_ohlcv.py:33} INFO - [PASS] low <= close <= high
+[2026-10-03T09:06:08.943+0000] {validate_ohlcv.py:33} INFO - [PASS] symbol is BTCUSDT
+[2026-10-03T09:06:08.944+0000] {validate_ohlcv.py:33} INFO - [PASS] No duplicate open_time
+[2026-10-03T09:06:08.946+0000] {validate_ohlcv.py:33} INFO - [PASS] Data is recent (< 2h)
+[2026-10-03T09:06:08.946+0000] {validate_ohlcv.py:74} ERROR - Only 17/18 checks passed
+[2026-10-03T09:06:08.947+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-03T09:06:08.948+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/trading_dag.py", line 30, in run_validation
+    raise ValueError("Data quality checks failed — stopping pipeline")
+ValueError: Data quality checks failed — stopping pipeline
+[2026-10-03T09:06:08.999+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=trading_pipeline, task_id=validate_data_quality, execution_date=20261003T090602, start_date=20261003T090608, end_date=20261003T090608
+[2026-10-03T09:06:09.024+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 120 for task validate_data_quality (Data quality checks failed — stopping pipeline; 200)
+[2026-10-03T09:06:09.031+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-10-03T09:06:09.093+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-03T09:06:09.096+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

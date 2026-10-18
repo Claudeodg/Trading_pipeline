@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: trading
+    database: neondb
+    schema: public
+    tables:
+      - name: raw_ohlcv
+        description: "Raw OHLCV candlestick data ingested from Binance API"

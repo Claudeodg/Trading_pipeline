@@ -1,0 +1,77 @@
+[0m18:29:47.898682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DAAEF2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DA8B04B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DAD80F9D0>]}
+
+
+============================== 18:29:47.903993 | e268200f-64f1-4eb1-a1c8-1bcd5de97540 ==============================
+[0m18:29:47.903993 [info ] [MainThread]: Running with dbt=1.12.5
+[0m18:29:47.905598 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\claud\\.dbt', 'invocation_command': 'dbt init trading_transforms', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m18:29:47.925475 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\claud\.dbt
+[0m18:29:47.929685 [debug] [MainThread]: Starter project path: C:\Users\claud\trading_pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m18:29:47.966539 [info ] [MainThread]: Setting up your profile.
+[0m18:32:56.721390 [info ] [MainThread]: Profile trading_transforms written to C:\Users\claud\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:32:56.727955 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:32:56.729859 [info ] [MainThread]: dbt version: 1.12.5
+[0m18:32:56.731124 [info ] [MainThread]: python version: 3.14.3
+[0m18:32:56.732456 [info ] [MainThread]: python path: C:\Users\claud\trading_pipeline\venv\Scripts\python.exe
+[0m18:32:56.733964 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m18:32:56.781488 [info ] [MainThread]: Using profiles dir at C:\Users\claud\.dbt
+[0m18:32:56.782102 [info ] [MainThread]: Using profiles.yml file at C:\Users\claud\.dbt\profiles.yml
+[0m18:32:56.782628 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\claud\trading_pipeline\transformation\trading_transforms\dbt_project.yml
+[0m18:32:56.784360 [info ] [MainThread]: adapter type: postgres
+[0m18:32:56.784944 [info ] [MainThread]: adapter version: 1.11.0
+[0m18:32:56.865860 [info ] [MainThread]: Configuration:
+[0m18:32:56.866487 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:32:56.867023 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:32:56.867522 [info ] [MainThread]: Required dependencies:
+[0m18:32:56.868024 [debug] [MainThread]: Executing "git --help"
+[0m18:32:56.917310 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:32:56.917924 [debug] [MainThread]: STDERR: "b''"
+[0m18:32:56.918406 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:32:56.919036 [info ] [MainThread]: Connection:
+[0m18:32:56.919395 [info ] [MainThread]:   host: localhost
+[0m18:32:56.919741 [info ] [MainThread]:   port: 5432
+[0m18:32:56.920069 [info ] [MainThread]:   user: postgres
+[0m18:32:56.920369 [info ] [MainThread]:   database: trading_db
+[0m18:32:56.920701 [info ] [MainThread]:   schema: public
+[0m18:32:56.921032 [info ] [MainThread]:   connect_timeout: 10
+[0m18:32:56.921346 [info ] [MainThread]:   role: None
+[0m18:32:56.921690 [info ] [MainThread]:   search_path: None
+[0m18:32:56.922031 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:32:56.922375 [info ] [MainThread]:   sslmode: None
+[0m18:32:56.922712 [info ] [MainThread]:   sslcert: None
+[0m18:32:56.923062 [info ] [MainThread]:   sslkey: None
+[0m18:32:56.923396 [info ] [MainThread]:   sslrootcert: None
+[0m18:32:56.924424 [info ] [MainThread]:   application_name: dbt
+[0m18:32:56.927051 [info ] [MainThread]:   autocommit: False
+[0m18:32:56.927572 [info ] [MainThread]:   retries: 1
+[0m18:32:56.928363 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:32:57.107234 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:33:00.697991 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:33:00.698341 [debug] [MainThread]: On debug: select 1 as id
+[0m18:33:00.698542 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:33:01.260373 [debug] [MainThread]: SQL status: SELECT 1 in 0.562 seconds
+[0m18:33:01.261077 [debug] [MainThread]: On debug: Close
+[0m18:33:01.261397 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:33:01.261887 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:33:01.262496 [info ] [MainThread]: Your new dbt project "trading_transforms" was created!
+Initialized new project in C:\Users\claud\trading_pipeline\transformation\trading_transforms\trading_transforms
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:33:01.263624 [debug] [MainThread]: Command `dbt init` succeeded at 18:33:01.263525 after 193.58 seconds
+[0m18:33:01.263892 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:33:01.264167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DAD64AC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DADE53BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020DABAE4490>]}
+[0m18:33:01.264509 [debug] [MainThread]: Flushing usage events
+[0m18:33:02.033318 [debug] [MainThread]: An error was encountered while trying to flush usage events

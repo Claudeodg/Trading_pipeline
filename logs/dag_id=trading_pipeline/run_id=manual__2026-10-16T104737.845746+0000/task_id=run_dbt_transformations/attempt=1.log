@@ -1,0 +1,67 @@
+[2026-10-16T10:48:03.073+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-16T10:48:03.157+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-16T10:47:37.845746+00:00 [queued]>
+[2026-10-16T10:48:03.178+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-16T10:47:37.845746+00:00 [queued]>
+[2026-10-16T10:48:03.179+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-16T10:48:03.205+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): run_dbt_transformations> on 2026-10-16 10:47:37.845746+00:00
+[2026-10-16T10:48:03.217+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=264) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-16T10:48:03.215+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'run_dbt_transformations', 'manual__2026-10-16T10:47:37.845746+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpuc1_7oot']
+[2026-10-16T10:48:03.218+0000] {standard_task_runner.py:63} INFO - Started process 266 to run task
+[2026-10-16T10:48:03.218+0000] {standard_task_runner.py:91} INFO - Job 199: Subtask run_dbt_transformations
+[2026-10-16T10:48:03.411+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-16T10:47:37.845746+00:00 [running]> on host 1e7f4ca8f0b3
+[2026-10-16T10:48:03.866+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='run_dbt_transformations' AIRFLOW_CTX_EXECUTION_DATE='2026-10-16T10:47:37.845746+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-16T10:47:37.845746+00:00'
+[2026-10-16T10:48:03.868+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-16T10:48:03.876+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-16T10:48:03.877+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/transformation/trading_transforms && dbt deps && dbt run']
+[2026-10-16T10:48:03.885+0000] {subprocess.py:86} INFO - Output:
+[2026-10-16T10:48:06.305+0000] {subprocess.py:93} INFO - [0m10:48:06  Running with dbt=1.12.5
+[2026-10-16T10:48:06.590+0000] {subprocess.py:93} INFO - [0m10:48:06  Warning: No packages were found in packages.yml
+[2026-10-16T10:48:06.601+0000] {subprocess.py:93} INFO - [0m10:48:06  Warning: No packages were found in packages.yml
+[2026-10-16T10:48:09.613+0000] {subprocess.py:93} INFO - [0m10:48:09  Running with dbt=1.12.5
+[2026-10-16T10:48:10.482+0000] {subprocess.py:93} INFO - [0m10:48:10  Registered adapter: postgres=1.11.0
+[2026-10-16T10:48:10.687+0000] {subprocess.py:93} INFO - [0m10:48:10  Unable to do partial parsing because profile has changed
+[2026-10-16T10:48:12.158+0000] {subprocess.py:93} INFO - [0m10:48:12  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2026-10-16T10:48:12.158+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2026-10-16T10:48:12.160+0000] {subprocess.py:93} INFO - - models.trading_transforms.example
+[2026-10-16T10:48:12.382+0000] {subprocess.py:93} INFO - [0m10:48:12  Found 2 models, 1 source, 477 macros
+[2026-10-16T10:48:12.386+0000] {subprocess.py:93} INFO - [0m10:48:12
+[2026-10-16T10:48:12.387+0000] {subprocess.py:93} INFO - [0m10:48:12  Concurrency: 1 threads (target='dev')
+[2026-10-16T10:48:12.389+0000] {subprocess.py:93} INFO - [0m10:48:12
+[2026-10-16T10:48:16.350+0000] {subprocess.py:93} INFO - [0m10:48:16  1 of 2 START sql view model public.stg_ohlcv ................................... [RUN]
+[2026-10-16T10:48:17.596+0000] {subprocess.py:93} INFO - [0m10:48:17  1 of 2 ERROR creating sql view model public.stg_ohlcv .......................... [[31mERROR[0m in 1.24s]
+[2026-10-16T10:48:17.603+0000] {subprocess.py:93} INFO - [0m10:48:17  2 of 2 SKIP relation public.mart_indicators .................................... [[33mSKIP[0m]
+[2026-10-16T10:48:18.690+0000] {subprocess.py:93} INFO - [0m10:48:18
+[2026-10-16T10:48:18.692+0000] {subprocess.py:93} INFO - [0m10:48:18  Finished running 2 view models in 0 hours 0 minutes and 6.30 seconds (6.30s).
+[2026-10-16T10:48:18.834+0000] {subprocess.py:93} INFO - [0m10:48:18
+[2026-10-16T10:48:18.836+0000] {subprocess.py:93} INFO - [0m10:48:18  [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[2026-10-16T10:48:18.838+0000] {subprocess.py:93} INFO - [0m10:48:18
+[2026-10-16T10:48:18.840+0000] {subprocess.py:93} INFO - [0m10:48:18  [[31mERROR[0m]: in model stg_ohlcv (models/staging/stg_ohlcv.sql)
+[2026-10-16T10:48:18.842+0000] {subprocess.py:93} INFO - [0m10:48:18    Database Error in model stg_ohlcv (models/staging/stg_ohlcv.sql)
+[2026-10-16T10:48:18.843+0000] {subprocess.py:93} INFO -   cross-database references are not implemented: "trading_db.public.raw_ohlcv"
+[2026-10-16T10:48:18.843+0000] {subprocess.py:93} INFO -   LINE 12:     select * from "trading_db"."public"."raw_ohlcv"
+[2026-10-16T10:48:18.844+0000] {subprocess.py:93} INFO -                              ^
+[2026-10-16T10:48:18.844+0000] {subprocess.py:93} INFO -   compiled code at target/run/trading_transforms/models/staging/stg_ohlcv.sql
+[2026-10-16T10:48:18.845+0000] {subprocess.py:93} INFO - [0m10:48:18
+[2026-10-16T10:48:18.846+0000] {subprocess.py:93} INFO - [0m10:48:18    compiled code at target/compiled/trading_transforms/models/staging/stg_ohlcv.sql
+[2026-10-16T10:48:18.847+0000] {subprocess.py:93} INFO - [0m10:48:18
+[2026-10-16T10:48:18.849+0000] {subprocess.py:93} INFO - [0m10:48:18  Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 REUSED=0 TOTAL=2
+[2026-10-16T10:48:19.679+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-10-16T10:48:19.681+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-16T10:48:19.742+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-10-16T10:48:19.749+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=trading_pipeline, task_id=run_dbt_transformations, execution_date=20261016T104737, start_date=20261016T104803, end_date=20261016T104819
+[2026-10-16T10:48:19.795+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 199 for task run_dbt_transformations (Bash command failed. The command returned a non-zero exit code 1.; 266)
+[2026-10-16T10:48:19.820+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-10-16T10:48:19.888+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-16T10:48:19.890+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

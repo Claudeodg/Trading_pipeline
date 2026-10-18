@@ -1,0 +1,224 @@
+[2026-10-18T10:45:36.786+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:45:36.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:45:36.798+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:45:36.797+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:45:40.418+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:45:40.615+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:45:40.614+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:45:40.694+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:45:40.691+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:45:40.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 4.005 seconds
+[2026-10-18T10:46:11.224+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:11.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:46:11.229+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:11.229+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:11.820+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:12.139+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:12.139+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:46:12.195+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:12.194+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:46:12.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.039 seconds
+[2026-10-18T10:46:42.691+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:42.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:46:42.701+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:42.701+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:43.551+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:46:43.649+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:43.648+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:46:43.688+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:46:43.688+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:46:43.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.049 seconds
+[2026-10-18T10:47:14.254+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:14.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:47:14.263+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:14.263+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:15.050+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:15.247+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:15.247+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:47:15.285+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:15.285+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:47:15.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.077 seconds
+[2026-10-18T10:47:46.176+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:46.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:47:46.180+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:46.180+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:46.751+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:47:46.891+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:46.891+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:47:46.930+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:47:46.930+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:47:46.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.807 seconds
+[2026-10-18T10:48:17.431+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:17.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:48:17.435+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:17.434+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:18.417+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:18.687+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:18.686+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:48:18.743+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:18.743+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:48:18.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.372 seconds
+[2026-10-18T10:48:49.656+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:49.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:48:49.660+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:49.660+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:50.187+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:48:50.445+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:50.445+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:48:50.483+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:48:50.483+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:48:50.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.877 seconds
+[2026-10-18T10:49:21.223+0000] {processor.py:161} INFO - Started process (PID=250) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:21.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:49:21.227+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:21.226+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:21.743+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:21.832+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:21.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:49:21.875+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:21.875+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:49:21.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.703 seconds
+[2026-10-18T10:49:52.432+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:52.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:49:52.436+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:52.436+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:52.875+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:49:52.967+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:52.967+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:49:53.007+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:49:53.007+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:49:53.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.631 seconds
+[2026-10-18T10:50:23.824+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:23.827+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:50:23.829+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:23.828+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:24.306+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:24.500+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:24.500+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:50:24.536+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:24.536+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:50:24.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.767 seconds
+[2026-10-18T10:50:55.644+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:55.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:50:55.649+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:55.649+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:56.106+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:50:56.291+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:56.291+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:50:56.334+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:50:56.334+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:50:56.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.734 seconds
+[2026-10-18T10:51:26.975+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:26.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:51:26.980+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:26.980+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:27.512+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:27.612+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:27.612+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:51:27.653+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:27.653+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:51:27.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.742 seconds
+[2026-10-18T10:51:58.219+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:58.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:51:58.222+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:58.222+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:58.666+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:51:58.800+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:58.800+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:51:58.847+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:51:58.846+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:51:58.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.685 seconds
+[2026-10-18T10:52:29.073+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:52:29.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:52:29.081+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:52:29.081+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:52:29.489+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:52:29.640+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:52:29.640+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:52:29.673+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:52:29.673+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:52:29.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.642 seconds
+[2026-10-18T10:53:00.653+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:00.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:53:00.660+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:00.659+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:01.280+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:01.375+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:01.375+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:53:01.412+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:01.412+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:53:01.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.812 seconds
+[2026-10-18T10:53:31.622+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:31.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:53:31.626+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:31.626+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:32.013+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:53:32.162+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:32.162+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:53:32.226+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:53:32.226+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:53:32.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.655 seconds
+[2026-10-18T10:54:02.965+0000] {processor.py:161} INFO - Started process (PID=332) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:02.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:54:02.968+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:02.968+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:03.447+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:03.570+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:03.570+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:54:03.597+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:03.597+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:54:03.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.686 seconds
+[2026-10-18T10:54:34.009+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:34.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:54:34.013+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:34.012+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:34.475+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:54:34.587+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:34.587+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:54:34.617+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:54:34.617+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:54:34.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.651 seconds
+[2026-10-18T10:55:26.466+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:26.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:55:26.469+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:26.469+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:28.094+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:28.201+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:28.200+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:55:28.242+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:28.241+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:55:28.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.844 seconds
+[2026-10-18T10:55:58.969+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:58.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:55:58.972+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:58.971+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:59.287+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:55:59.497+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:59.497+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:55:59.585+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:55:59.585+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:55:59.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.673 seconds
+[2026-10-18T10:56:30.432+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:56:30.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:56:30.435+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:56:30.435+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:56:30.920+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:56:31.034+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:56:31.034+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:56:31.068+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:56:31.068+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:56:31.113+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.686 seconds
+[2026-10-18T10:57:01.818+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:01.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:57:01.822+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:01.822+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:02.322+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:02.433+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:02.433+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:57:02.465+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:02.465+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:57:02.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.700 seconds
+[2026-10-18T10:57:32.602+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:32.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:57:32.605+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:32.605+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:33.241+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:57:33.409+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:33.408+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:57:33.468+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:57:33.468+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:57:33.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.927 seconds
+[2026-10-18T10:58:03.707+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:03.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:58:03.713+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:03.712+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:04.191+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:04.327+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:04.327+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:58:04.366+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:04.366+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:58:04.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.720 seconds
+[2026-10-18T10:58:35.099+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:35.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:58:35.104+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:35.103+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:35.613+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:58:35.685+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:35.685+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:58:35.715+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:58:35.715+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:58:35.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.664 seconds
+[2026-10-18T10:59:05.822+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:05.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:59:05.825+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:05.825+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:06.221+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:06.350+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:06.350+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:59:06.380+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:06.380+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:59:06.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.597 seconds
+[2026-10-18T10:59:37.080+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:37.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T10:59:37.086+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:37.086+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:37.567+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T10:59:37.654+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:37.653+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T10:59:37.696+0000] {logging_mixin.py:188} INFO - [2026-10-18T10:59:37.696+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 10:00:00+00:00, run_after=2026-10-18 11:00:00+00:00
+[2026-10-18T10:59:37.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.673 seconds
+[2026-10-18T11:00:08.331+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:08.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T11:00:08.335+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:08.335+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:08.838+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:08.921+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:08.921+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T11:00:08.956+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:08.956+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 11:00:00+00:00, run_after=2026-10-18 12:00:00+00:00
+[2026-10-18T11:00:08.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.670 seconds
+[2026-10-18T11:00:39.210+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:39.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T11:00:39.214+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:39.214+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:39.745+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:00:39.944+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:39.944+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T11:00:39.991+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:00:39.990+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 11:00:00+00:00, run_after=2026-10-18 12:00:00+00:00
+[2026-10-18T11:00:40.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.838 seconds
+[2026-10-18T11:01:10.418+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:10.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T11:01:10.422+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:10.421+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:10.838+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:11.262+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:11.262+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T11:01:11.461+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:11.461+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 11:00:00+00:00, run_after=2026-10-18 12:00:00+00:00
+[2026-10-18T11:01:11.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.108 seconds
+[2026-10-18T11:01:42.006+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:42.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T11:01:42.009+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:42.009+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:42.465+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:01:42.688+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:42.687+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T11:01:42.749+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:01:42.749+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 11:00:00+00:00, run_after=2026-10-18 12:00:00+00:00
+[2026-10-18T11:01:42.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 0.813 seconds
+[2026-10-18T11:02:13.107+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:02:13.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/trading_dag.py for tasks to queue
+[2026-10-18T11:02:13.110+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:02:13.110+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:02:13.557+0000] {processor.py:840} INFO - DAG(s) 'trading_pipeline' retrieved from /opt/airflow/dags/trading_dag.py
+[2026-10-18T11:02:13.719+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:02:13.718+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-10-18T11:02:13.751+0000] {logging_mixin.py:188} INFO - [2026-10-18T11:02:13.751+0000] {dag.py:3954} INFO - Setting next_dagrun for trading_pipeline to 2026-10-18 11:00:00+00:00, run_after=2026-10-18 12:00:00+00:00
+[2026-10-18T11:02:14.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/trading_dag.py took 1.147 seconds

@@ -1,0 +1,43 @@
+[2026-10-03T11:09:54.571+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-03T11:09:54.640+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T11:09:46.472204+00:00 [queued]>
+[2026-10-03T11:09:54.653+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T11:09:46.472204+00:00 [queued]>
+[2026-10-03T11:09:54.655+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-03T11:09:54.670+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): run_dbt_transformations> on 2026-10-03 11:09:46.472204+00:00
+[2026-10-03T11:09:54.681+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'run_dbt_transformations', 'manual__2026-10-03T11:09:46.472204+00:00', '--job-id', '164', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpg3b96u_o']
+[2026-10-03T11:09:54.683+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=204) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-03T11:09:54.688+0000] {standard_task_runner.py:91} INFO - Job 164: Subtask run_dbt_transformations
+[2026-10-03T11:09:54.689+0000] {standard_task_runner.py:63} INFO - Started process 206 to run task
+[2026-10-03T11:09:55.017+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T11:09:46.472204+00:00 [running]> on host 0662efcd0286
+[2026-10-03T11:09:55.471+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='run_dbt_transformations' AIRFLOW_CTX_EXECUTION_DATE='2026-10-03T11:09:46.472204+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-03T11:09:46.472204+00:00'
+[2026-10-03T11:09:55.472+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-03T11:09:55.485+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-03T11:09:55.487+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/transformation/trading_transforms && dbt deps && dbt run']
+[2026-10-03T11:09:55.500+0000] {subprocess.py:86} INFO - Output:
+[2026-10-03T11:09:57.784+0000] {subprocess.py:93} INFO - [0m11:09:57  Running with dbt=1.12.5
+[2026-10-03T11:09:57.934+0000] {subprocess.py:93} INFO - [0m11:09:57  Warning: No packages were found in packages.yml
+[2026-10-03T11:09:57.942+0000] {subprocess.py:93} INFO - [0m11:09:57  Warning: No packages were found in packages.yml
+[2026-10-03T11:10:00.706+0000] {subprocess.py:93} INFO - [0m11:10:00  Running with dbt=1.12.5
+[2026-10-03T11:10:01.073+0000] {subprocess.py:93} INFO - [0m11:10:01  Registered adapter: postgres=1.11.0
+[2026-10-03T11:10:01.492+0000] {subprocess.py:93} INFO - [0m11:10:01  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2026-10-03T11:10:01.493+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2026-10-03T11:10:01.494+0000] {subprocess.py:93} INFO - - models.trading_transforms.example
+[2026-10-03T11:10:01.885+0000] {subprocess.py:93} INFO - [0m11:10:01  Found 2 models, 1 source, 477 macros
+[2026-10-03T11:10:01.890+0000] {subprocess.py:93} INFO - [0m11:10:01
+[2026-10-03T11:10:01.891+0000] {subprocess.py:93} INFO - [0m11:10:01  Concurrency: 1 threads (target='dev')
+[2026-10-03T11:10:01.892+0000] {subprocess.py:93} INFO - [0m11:10:01
+[2026-10-03T11:10:02.307+0000] {subprocess.py:93} INFO - [0m11:10:02  1 of 2 START sql view model public.stg_ohlcv ................................... [RUN]
+[2026-10-03T11:10:02.645+0000] {subprocess.py:93} INFO - [0m11:10:02  1 of 2 OK created sql view model public.stg_ohlcv .............................. [[32mCREATE VIEW[0m in 0.33s]
+[2026-10-03T11:10:02.650+0000] {subprocess.py:93} INFO - [0m11:10:02  2 of 2 START sql view model public.mart_indicators ............................. [RUN]
+[2026-10-03T11:10:02.834+0000] {subprocess.py:93} INFO - [0m11:10:02  2 of 2 OK created sql view model public.mart_indicators ........................ [[32mCREATE VIEW[0m in 0.18s]
+[2026-10-03T11:10:02.947+0000] {subprocess.py:93} INFO - [0m11:10:02
+[2026-10-03T11:10:02.949+0000] {subprocess.py:93} INFO - [0m11:10:02  Finished running 2 view models in 0 hours 0 minutes and 1.05 seconds (1.05s).
+[2026-10-03T11:10:03.131+0000] {subprocess.py:93} INFO - [0m11:10:03
+[2026-10-03T11:10:03.132+0000] {subprocess.py:93} INFO - [0m11:10:03  [32mCompleted successfully[0m
+[2026-10-03T11:10:03.134+0000] {subprocess.py:93} INFO - [0m11:10:03
+[2026-10-03T11:10:03.136+0000] {subprocess.py:93} INFO - [0m11:10:03  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[2026-10-03T11:10:03.878+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-10-03T11:10:03.879+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-03T11:10:04.053+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=trading_pipeline, task_id=run_dbt_transformations, execution_date=20261003T110946, start_date=20261003T110954, end_date=20261003T111004
+[2026-10-03T11:10:04.101+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-10-03T11:10:04.226+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-03T11:10:04.232+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

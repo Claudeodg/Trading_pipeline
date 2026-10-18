@@ -1,0 +1,58 @@
+[2026-10-03T10:30:55.322+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-03T10:30:55.506+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T10:30:47.830458+00:00 [queued]>
+[2026-10-03T10:30:55.521+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T10:30:47.830458+00:00 [queued]>
+[2026-10-03T10:30:55.523+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-03T10:30:55.540+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): run_dbt_transformations> on 2026-10-03 10:30:47.830458+00:00
+[2026-10-03T10:30:55.549+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'run_dbt_transformations', 'manual__2026-10-03T10:30:47.830458+00:00', '--job-id', '137', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpvwdzken4']
+[2026-10-03T10:30:55.551+0000] {standard_task_runner.py:91} INFO - Job 137: Subtask run_dbt_transformations
+[2026-10-03T10:30:55.552+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=184) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-03T10:30:55.553+0000] {standard_task_runner.py:63} INFO - Started process 188 to run task
+[2026-10-03T10:30:55.774+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.run_dbt_transformations manual__2026-10-03T10:30:47.830458+00:00 [running]> on host 0613cfa31867
+[2026-10-03T10:30:56.030+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='run_dbt_transformations' AIRFLOW_CTX_EXECUTION_DATE='2026-10-03T10:30:47.830458+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-03T10:30:47.830458+00:00'
+[2026-10-03T10:30:56.031+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-03T10:30:56.040+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-10-03T10:30:56.041+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/transformation/trading_transforms && dbt deps && dbt run']
+[2026-10-03T10:30:56.051+0000] {subprocess.py:86} INFO - Output:
+[2026-10-03T10:30:58.113+0000] {subprocess.py:93} INFO - [0m10:30:58  Running with dbt=1.12.5
+[2026-10-03T10:30:58.289+0000] {subprocess.py:93} INFO - [0m10:30:58  Warning: No packages were found in packages.yml
+[2026-10-03T10:30:58.294+0000] {subprocess.py:93} INFO - [0m10:30:58  Warning: No packages were found in packages.yml
+[2026-10-03T10:31:01.134+0000] {subprocess.py:93} INFO - [0m10:31:01  Running with dbt=1.12.5
+[2026-10-03T10:31:01.435+0000] {subprocess.py:93} INFO - [0m10:31:01  Registered adapter: postgres=1.11.0
+[2026-10-03T10:31:01.514+0000] {subprocess.py:93} INFO - [0m10:31:01  Unable to do partial parsing because saved manifest not found. Starting full parse.
+[2026-10-03T10:31:02.901+0000] {subprocess.py:93} INFO - [0m10:31:02  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2026-10-03T10:31:02.902+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2026-10-03T10:31:02.902+0000] {subprocess.py:93} INFO - - models.trading_transforms.example
+[2026-10-03T10:31:03.183+0000] {subprocess.py:93} INFO - [0m10:31:03  Found 2 models, 1 source, 477 macros
+[2026-10-03T10:31:03.187+0000] {subprocess.py:93} INFO - [0m10:31:03
+[2026-10-03T10:31:03.188+0000] {subprocess.py:93} INFO - [0m10:31:03  Concurrency: 1 threads (target='dev')
+[2026-10-03T10:31:03.189+0000] {subprocess.py:93} INFO - [0m10:31:03
+[2026-10-03T10:31:03.261+0000] {subprocess.py:93} INFO - [0m10:31:03
+[2026-10-03T10:31:03.262+0000] {subprocess.py:93} INFO - [0m10:31:03  Finished running  in 0 hours 0 minutes and 0.07 seconds (0.07s).
+[2026-10-03T10:31:03.264+0000] {subprocess.py:93} INFO - [0m10:31:03  [[31mERROR[0m]: Encountered an error:
+[2026-10-03T10:31:03.264+0000] {subprocess.py:93} INFO - Database Error
+[2026-10-03T10:31:03.265+0000] {subprocess.py:93} INFO -   connection to server at "localhost" (::1), port 5432 failed: Connection refused
+[2026-10-03T10:31:03.266+0000] {subprocess.py:93} INFO -   	Is the server running on that host and accepting TCP/IP connections?
+[2026-10-03T10:31:03.266+0000] {subprocess.py:93} INFO -   connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+[2026-10-03T10:31:03.266+0000] {subprocess.py:93} INFO -   	Is the server running on that host and accepting TCP/IP connections?
+[2026-10-03T10:31:03.267+0000] {subprocess.py:93} INFO - 
+[2026-10-03T10:31:04.088+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-10-03T10:31:04.089+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-03T10:31:04.248+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-10-03T10:31:04.254+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=trading_pipeline, task_id=run_dbt_transformations, execution_date=20261003T103047, start_date=20261003T103055, end_date=20261003T103104
+[2026-10-03T10:31:04.286+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 137 for task run_dbt_transformations (Bash command failed. The command returned a non-zero exit code 2.; 188)
+[2026-10-03T10:31:04.325+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-10-03T10:31:04.410+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-03T10:31:04.415+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

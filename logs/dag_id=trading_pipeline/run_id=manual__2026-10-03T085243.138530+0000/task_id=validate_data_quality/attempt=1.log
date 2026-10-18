@@ -1,0 +1,40 @@
+[2026-10-03T08:52:47.376+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-03T08:52:47.559+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T08:52:43.138530+00:00 [queued]>
+[2026-10-03T08:52:47.573+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T08:52:43.138530+00:00 [queued]>
+[2026-10-03T08:52:47.580+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-03T08:52:47.599+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): validate_data_quality> on 2026-10-03 08:52:43.138530+00:00
+[2026-10-03T08:52:47.607+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'validate_data_quality', 'manual__2026-10-03T08:52:43.138530+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpvouadgvn']
+[2026-10-03T08:52:47.609+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=183) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-03T08:52:47.609+0000] {standard_task_runner.py:91} INFO - Job 112: Subtask validate_data_quality
+[2026-10-03T08:52:47.610+0000] {standard_task_runner.py:63} INFO - Started process 185 to run task
+[2026-10-03T08:52:47.770+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.validate_data_quality manual__2026-10-03T08:52:43.138530+00:00 [running]> on host cf18290118b0
+[2026-10-03T08:52:48.024+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='validate_data_quality' AIRFLOW_CTX_EXECUTION_DATE='2026-10-03T08:52:43.138530+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-03T08:52:43.138530+00:00'
+[2026-10-03T08:52:48.025+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-03T08:52:48.036+0000] {validate_ohlcv.py:38} INFO - Starting data quality validation on raw_ohlcv
+[2026-10-03T08:52:48.037+0000] {validate_ohlcv.py:27} INFO - Database engine created successfully
+[2026-10-03T08:52:48.105+0000] {validate_ohlcv.py:42} INFO - Loaded 270 rows for validation
+[2026-10-03T08:52:48.106+0000] {validate_ohlcv.py:33} INFO - [PASS] Table is not empty
+[2026-10-03T08:52:48.107+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'symbol'
+[2026-10-03T08:52:48.108+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'open_time'
+[2026-10-03T08:52:48.109+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'open'
+[2026-10-03T08:52:48.109+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'high'
+[2026-10-03T08:52:48.110+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'low'
+[2026-10-03T08:52:48.111+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'close'
+[2026-10-03T08:52:48.111+0000] {validate_ohlcv.py:33} INFO - [PASS] No NULLs in 'volume'
+[2026-10-03T08:52:48.112+0000] {validate_ohlcv.py:33} INFO - [PASS] 'open' > 0
+[2026-10-03T08:52:48.112+0000] {validate_ohlcv.py:33} INFO - [PASS] 'high' > 0
+[2026-10-03T08:52:48.113+0000] {validate_ohlcv.py:33} INFO - [PASS] 'low' > 0
+[2026-10-03T08:52:48.113+0000] {validate_ohlcv.py:33} INFO - [PASS] 'close' > 0
+[2026-10-03T08:52:48.114+0000] {validate_ohlcv.py:33} INFO - [PASS] 'volume' > 0
+[2026-10-03T08:52:48.114+0000] {validate_ohlcv.py:33} INFO - [PASS] high >= low
+[2026-10-03T08:52:48.115+0000] {validate_ohlcv.py:33} INFO - [PASS] low <= close <= high
+[2026-10-03T08:52:48.116+0000] {validate_ohlcv.py:33} INFO - [PASS] symbol is BTCUSDT
+[2026-10-03T08:52:48.116+0000] {validate_ohlcv.py:33} INFO - [PASS] No duplicate open_time
+[2026-10-03T08:52:48.119+0000] {validate_ohlcv.py:33} INFO - [PASS] Data is recent (< 2h)
+[2026-10-03T08:52:48.120+0000] {validate_ohlcv.py:72} INFO - All 18 checks passed
+[2026-10-03T08:52:48.121+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-10-03T08:52:48.122+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-03T08:52:48.173+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=trading_pipeline, task_id=validate_data_quality, execution_date=20261003T085243, start_date=20261003T085247, end_date=20261003T085248
+[2026-10-03T08:52:48.225+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-10-03T08:52:48.319+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-03T08:52:48.323+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

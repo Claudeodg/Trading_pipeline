@@ -18,13 +18,21 @@ def get_engine():
     Create and return a SQLAlchemy engine using credentials from .env
     """
     host = os.getenv("DB_HOST")
-    port = os.getenv("DB_PORT")
+    port = os.getenv("DB_PORT", "5432")
     name = os.getenv("DB_NAME")
     user = os.getenv("DB_USER")
     password = os.getenv("DB_PASSWORD")
 
     url = f"postgresql://{user}:{password}@{host}:{port}/{name}"
-    engine = create_engine(url)
+    engine = create_engine( "postgresql+psycopg2://",
+        connect_args={
+            "host": host,
+            "port": int(port),
+            "dbname": name,
+            "user": user,
+            "password": password,
+            "sslmode": "require",   
+        })
     logger.info("Database engine created successfully")
     return engine
 

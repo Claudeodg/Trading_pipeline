@@ -1,0 +1,47 @@
+x-airflow-common:
+  &airflow-common
+  build: .
+  env_file:
+    - .env
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:Skcb2026@host.docker.internal:5432/trading_db
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    PYTHONPATH: /opt/airflow
+  volumes:
+    - ./orchestration/dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./ingestion:/opt/airflow/ingestion
+    - ./storage:/opt/airflow/storage
+    - ./quality:/opt/airflow/quality
+    - ./transformation:/opt/airflow/transformation
+    - C:\Users\claud\.dbt:/home/airflow/.dbt
+
+services:
+  airflow-init:
+    <<: *airflow-common
+    command: bash -c "airflow db migrate && airflow users create -u claudeodg -p claude2026 -f Sonafouo -l Bonte -r Admin -e sonafouobonte@gmail.com"
+
+  airflow-webserver:
+    <<: *airflow-common
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+  
+  streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    
+    volumes:
+      - ./dashboard:/opt/airflow/dashboard
+    entrypoint: []
+    command: streamlit run /opt/airflow/dashboard/app.py --server.port 8501 --server.address 0.0.0.0

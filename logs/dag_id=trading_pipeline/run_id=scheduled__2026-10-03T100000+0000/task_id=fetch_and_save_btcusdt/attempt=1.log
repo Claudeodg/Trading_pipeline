@@ -1,0 +1,22 @@
+[2026-10-03T11:00:01.286+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-10-03T11:00:01.469+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trading_pipeline.fetch_and_save_btcusdt scheduled__2026-10-03T10:00:00+00:00 [queued]>
+[2026-10-03T11:00:01.485+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trading_pipeline.fetch_and_save_btcusdt scheduled__2026-10-03T10:00:00+00:00 [queued]>
+[2026-10-03T11:00:01.492+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-10-03T11:00:01.510+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_and_save_btcusdt> on 2026-10-03 10:00:00+00:00
+[2026-10-03T11:00:01.518+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'trading_pipeline', 'fetch_and_save_btcusdt', 'scheduled__2026-10-03T10:00:00+00:00', '--job-id', '154', '--raw', '--subdir', 'DAGS_FOLDER/trading_dag.py', '--cfg-path', '/tmp/tmpt1u86v66']
+[2026-10-03T11:00:01.520+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=298) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-10-03T11:00:01.521+0000] {standard_task_runner.py:91} INFO - Job 154: Subtask fetch_and_save_btcusdt
+[2026-10-03T11:00:01.521+0000] {standard_task_runner.py:63} INFO - Started process 300 to run task
+[2026-10-03T11:00:01.711+0000] {task_command.py:426} INFO - Running <TaskInstance: trading_pipeline.fetch_and_save_btcusdt scheduled__2026-10-03T10:00:00+00:00 [running]> on host 207f38f1a0a0
+[2026-10-03T11:00:01.994+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='claude' AIRFLOW_CTX_DAG_ID='trading_pipeline' AIRFLOW_CTX_TASK_ID='fetch_and_save_btcusdt' AIRFLOW_CTX_EXECUTION_DATE='2026-10-03T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-03T10:00:00+00:00'
+[2026-10-03T11:00:01.996+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-10-03T11:00:02.006+0000] {fetch_binance.py:36} INFO - Fetching BTCUSDT data — interval 1h — limit 100
+[2026-10-03T11:00:02.999+0000] {fetch_binance.py:70} INFO - Successfully fetched 100 candles for BTCUSDT
+[2026-10-03T11:00:03.001+0000] {save_to_postgres.py:28} INFO - Database engine created successfully
+[2026-10-03T11:00:03.260+0000] {save_to_postgres.py:50} INFO - 100 rows processed for table 'raw_ohlcv'
+[2026-10-03T11:00:03.260+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-10-03T11:00:03.261+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-10-03T11:00:03.344+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=trading_pipeline, task_id=fetch_and_save_btcusdt, execution_date=20261003T100000, start_date=20261003T110001, end_date=20261003T110003
+[2026-10-03T11:00:03.424+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-10-03T11:00:03.508+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-03T11:00:03.511+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
